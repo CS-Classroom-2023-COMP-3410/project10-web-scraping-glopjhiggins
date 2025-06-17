@@ -13,17 +13,22 @@ axios.get('https://bulletin.du.edu/undergraduate/majorsminorscoursedescriptions/
     const courses = []; // Array to store filtered courses
 
     courseBlocks.each((index, element) => {
-      const titleElement = $(element).find('p.courseblocktitle').text().trim(); // Extract course title
-      const descElement = $(element).find('p.courseblockdesc').text().trim(); // Extract course description text
+      const titleElement = $(element).find('p.courseblocktitle').text().trim();
+      const descElement = $(element).find('p.courseblockdesc').text().trim();
 
-      const classNumberMatch = titleElement.match(/COMP (\d+)/); // Extract class number
-      const classNumber = classNumberMatch ? parseInt(classNumberMatch[1]) : null; // Parse class number
+      const classNumberMatch = titleElement.match(/COMP[\s\u00a0](\d+)/);
+      const classNumber = classNumberMatch ? parseInt(classNumberMatch[1]) : null;
 
-      // Check if class number is above 3000 and description does not contain "Prerequisite"
+      // Filter for courses with class numbers 3000 and above, excluding those with 'prerequisite' in the description
       if (classNumber && classNumber >= 3000 && !descElement.toLowerCase().includes('prerequisite')) {
         const courseCode = `COMP-${classNumber}`;
-        const courseTitle = titleElement.replace(/COMP \d+/, '').trim(); // Remove course code from title
-        courses.push({ course: courseCode, title: courseTitle }); // Add to courses array
+        const courseTitle = titleElement.replace(/COMP[\s\u00a0]\d+/, '').trim();
+        courses.push({
+          course: courseCode,
+          title: courseTitle,
+          description: descElement
+        });
+        console.log(`Saved course: ${courseCode} - ${courseTitle}`);
       }
     });
 
@@ -36,3 +41,4 @@ axios.get('https://bulletin.du.edu/undergraduate/majorsminorscoursedescriptions/
   .catch(error => {
     console.error('Error fetching and parsing the page:', error.message); // Improved error handling
   });
+  

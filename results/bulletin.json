@@ -1,3 +1,74 @@
 {
-  "courses": []
+  "courses": [
+    {
+      "course": "COMP-3000",
+      "title": "Seminar: The Real World  (1 Credit)",
+      "description": "Series of lectures by alumni and others on surviving culture shock when leaving the University and entering the job world.  Open to all students regardless of major. Cross listed with MATH 3000."
+    },
+    {
+      "course": "COMP-3009",
+      "title": "Essential Math for Data Science and AI  (4 Credits)",
+      "description": "The primary objective of the course is to empower students with the mathematical tools most used in data science. Students will develop an understanding of fundamental topics such as matrix operations, eigenvectors, and singular value decomposition (SVD), along with key calculus principles, including derivatives and integrals, with a focus on their applications in data science. The course also explores elements of multivariate calculus and optimization techniques to solve real-world problems, as well as probability concepts relevant to modeling uncertainty and variability in data. Additionally, students will gain exposure to implementing mathematical models using Python libraries such as NumPy, Pandas, and Matplotlib to analyze and manipulate data. By synthesizing these mathematical principles, students will be prepared for more advanced topics in data science and machine learning. Graduate student will be expected to upload a course presentation/project assignment to their individual Github portfolio."
+    },
+    {
+      "course": "COMP-3372",
+      "title": "Advanced Algorithms  (4 Credits)",
+      "description": "Advanced techniques for the design and analysis of algorithms and data structures; amortized complexity, self-adjusting data structures; randomized , online, and string algorithms; NP-completeness, approximation and exact exponential algorithms; flow networks."
+    },
+    {
+      "course": "COMP-3455",
+      "title": "Shell Scripting and System Tools  (4 Credits)",
+      "description": "This course covers navigating and utilizing tools in a UNIX environment, including use of common command line utilities, Bash and Python shell scripting, source control via Git, pipes and I/O redirection, networking in Python and OS multi-processing/multi-threading. More emphasis will be placed on using these tools than on how those tools work. Students should have experience with Python prior to taking this course."
+    },
+    {
+      "course": "COMP-3495",
+      "title": "AI Design Project  (4 Credits)",
+      "description": "The Artificial Intelligence Design Project serves as the culminating experience for students who have completed COMP 3490 and COMP 3491. This course provides an opportunity for students to apply their AI knowledge and skills to a self-directed project in a domain of their choice. Over ten weeks, students will identify a problem, design an AI-driven solution, and develop a functional prototype or proof-of-concept. Emphasizing creativity, problem-solving, and ethical considerations, this capstone-style course enables students to make a tangible impact in their field. The course includes milestone check-ins, peer reviews, and a final presentation to showcase their work."
+    },
+    {
+      "course": "COMP-3525",
+      "title": "Human Centered AI - Mind Reading Machines  (4 Credits)",
+      "description": "This course explores a key intersection of Artificial Intelligence (AI) and Human-Computer Interaction (HCI). How can AI enhance our interactions with computers by catering to our individual needs and differences? Can we teach computers to understand people’s thoughts and feelings to improve overall interaction? Humans often adjust their communication when they notice the person they’re talking to is frustrated—why can’t computers do the same? In this interdisciplinary, research-focused course, you will read, present, and discuss seminal papers at the intersection of AI and HCI, including (but not limited to) affective computing, physiological computing, augmented cognition, and multimodal interaction. ## Learning Objectives (General Goal) Demonstrate a broad understanding of the intersections between Human-Computer Interaction and Artificial Intelligence, with an emphasis on user modeling. (LO1) Recognize how theories from fields outside of Computer Science can inform and enhance Computer Science practices. (LO2) Develop knowledge of state-of-the-art user modeling techniques, including practical applications and associated challenges. (LO3) Develop critical thinking and scientific communication skills related to current AI topics, including science writing and scientific discourse."
+    },
+    {
+      "course": "COMP-3681",
+      "title": "Networking for Games  (4 Credits)",
+      "description": "Implementing the networking code for multiplayer games is a complex task that requires an understanding of performance, security, game design, and advanced programming concepts. In this course, students are introduced to the networking stack and how this is connected to the Internet, learn how to write protocols for games, and implement several large games using a game engine that demonstrate the kind of networking and protocols required by different genres of games. In addition, tools are introduced that help understand and debug networking code, simplify the creation of protocols, and make the development of networking code easier."
+    },
+    {
+      "course": "COMP-3701",
+      "title": "Topics in Computer Graphics  (4 Credits)",
+      "description": ""
+    },
+    {
+      "course": "COMP-3702",
+      "title": "Topics in Database  (4 Credits)",
+      "description": ""
+    },
+    {
+      "course": "COMP-3703",
+      "title": "Topics-Artificial Intelligence  (4 Credits)",
+      "description": ""
+    },
+    {
+      "course": "COMP-3704",
+      "title": "Advanced Topics: Systems  (4 Credits)",
+      "description": ""
+    },
+    {
+      "course": "COMP-3705",
+      "title": "Topics in Computer Science  (1-4 Credits)",
+      "description": ""
+    },
+    {
+      "course": "COMP-3991",
+      "title": "Independent Study  (1-10 Credits)",
+      "description": "Cannot be arranged for any course that appears in the regular course schedule for that particular year."
+    },
+    {
+      "course": "COMP-3995",
+      "title": "Independent Research  (1-10 Credits)",
+      "description": ""
+    }
+  ]
 }
